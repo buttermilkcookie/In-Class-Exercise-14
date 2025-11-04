@@ -5,14 +5,14 @@
 
 html {
   font-family: Helvetica, sans-serif;
-  color: black;
+  color: #B56B00;
   font-size: 14px;
 }
 
 body {
   min-width: 500px;
   margin: auto;
-  background-color: #f3f7f8;
+  background-color: #DBDBC1;
 }
 
 header, footer{
@@ -20,28 +20,74 @@ header, footer{
   min-width: 500px;
   height: 50px;
   padding: 15px 0 30px 0;
-  background-color: #025159;
-  color: #FFFFFF;
+  background-color: #F5A927;
+  color: #356B1F;
 }
 
 .navLogo {
   font-size: 2.9rem;
   font-weight: 700;
   padding: 10px;
-  font-family: trilby, serif;
-  font-weight: 900;
+}
+
+.navLogo, h2 {
+  font-weight: 1000;
   font-style: normal;
 }
 
 footer p {
-  font-size: .8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+  color: #C90A0A;
+  padding: 10px;
 }
 
 img {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
+  margin-right: 0.5rem;
+  border-radius: 10px;
+  border: 2px;
+  padding: 1rem;
+  overflow: hidden;
 }
 
-.bear {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+.poison {
+width: 20px;
+height: 20px;
+margin-right: 0.5rem;
+}
+
+.adults {
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  position: relative;
+  bottom: 5px;
+}
+
+.description {
+  border-top: 1px solid #ddd;
+  padding-top: 0.75rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #4C7A21;
+  padding: 20px;
 }
